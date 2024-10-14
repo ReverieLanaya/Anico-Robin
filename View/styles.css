@@ -1,0 +1,87 @@
+.header {
+
+    display: flex;
+    background-color:rgb(102, 42, 102);
+    justify-content: space-between;
+    padding: 0.5% 2%;
+
+}
+
+.logo_header img {
+
+    max-width: 200px;
+    font-size: 7px;
+    display: flex;
+}
+
+.recherche {
+
+    display: flex;
+    width: 35%;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+    border-radius: 55px;
+    height:60px;
+    padding-left: 2%;
+
+
+}
+
+.recherche h3 {
+    font-size: 25px;
+    align-self: center;
+}
+
+.recherche img {
+    align-self: center;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.connexion_header {
+    display: flex;
+    align-items: center;
+
+}
+
+.connexion_header div {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.connexion_header :first-child {
+    background-color: beige;
+}
+
+.connexion_header :nth-child(2) {
+    background-color: rgb(63, 63, 155);
+}
+
+.gauche {
+    background-color: rgb(77, 48, 48);
+    left: 0;
+    width: 20%;
+    margin-top: 0px;
+    padding: 20px;
+    height: 80vh;
+}
+
+.gauche :first-child {
+    margin-top: 0px;
+}
+.gauche h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.liens_gauche {
+    display: flex;
+    align-items: center;
+}
+
+.liens_gauche img {
+    width: 20px;
+    padding: 20px;
+}
