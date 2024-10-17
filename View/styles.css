@@ -1,3 +1,5 @@
+
+
 .header {
 
     display: flex;
@@ -24,7 +26,6 @@
     border-radius: 55px;
     height:60px;
     padding-left: 2%;
-
 
 }
 
@@ -60,31 +61,43 @@
 }
 
 .gauche {
-    background-color: rgb(182, 177, 177);
+    background-color: rgb(72, 58, 78);
+    color: rgb(202, 201, 199);
     left: 0;
     width: 17%;
     margin-top: 0px;
     padding: 20px;
     height: 80vh;
 
+
 }
 
-.gauche :first-child {
-    margin-top: 0px;
+a {
+    text-decoration: none;
 }
-.gauche h2:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
+
+
 
 .liens_gauche {
     display: flex;
     align-items: center;
+    height: 30px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
 }
 
 .liens_gauche img {
     width: 30px;
     padding: 20px;
+}
+
+a:visited {
+    color: rgb(202, 201, 199);
+  }
+
+.gauche h2:hover {
+    background-color: rgb(134, 59, 163);
+    cursor: pointer;
 }
 
 /* partie 2 de Gauche : Ma liste */
@@ -95,10 +108,12 @@
     font-size: 25px;
     background-color: brown;
     border-radius: 25px;
+    margin-top: 30vh;
+    height: 10vh;
+    justify-content: space-around;
+    padding: 0px 8px;
 }
 .liste_gauche img {
     width: 50px;
-    margin-top: 5vh;
-    padding:  30px 30px 30px 20px;
 
 }
