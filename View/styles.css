@@ -60,6 +60,10 @@
     background-color: rgb(63, 63, 155);
 }
 
+
+.main_body {
+    display: flex;
+}
 .gauche {
     background-color: rgb(72, 58, 78);
     color: rgb(202, 201, 199);
@@ -117,3 +121,75 @@ a:visited {
     width: 50px;
 
 }
+
+
+/* partie milieu */
+
+
+
+
+.slide_section {
+    margin: 5% 0% 0% 5% ;
+}
+.slide_texte {
+    position: relative;
+    max-width: 20%;
+    padding: 20px;
+    background-color: rgb(35, 24, 46);
+    color: rgb(228, 226, 223);
+    z-index: 5;
+}
+
+.carroussel_btn {
+
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.carroussel_btn:hover {
+    cursor: pointer;
+    
+}
+
+
+.descri_slide img {
+    max-width: 50%;
+    top: 15%;
+    z-index: 2;
+    position: fixed;
+}
+
+
+/* The dots/bullets/indicators */
+
+.numero_carroussel {
+
+    background-color: rgb(90, 60, 97);
+    padding: 10px 10px 5px 10px;
+    border-radius: 15px;
+    z-index: 5;
+    position: relative;
+    width: fit-content;
+    margin-left: 30%;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #8615c7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 5;
+    position: relative;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+

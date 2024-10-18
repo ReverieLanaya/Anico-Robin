@@ -8,7 +8,12 @@
 
 include('header.php');
 
-include('gauche.php');
+
+include('milieu.php');
+
+
+
+
 
 include('footer.php');
 
