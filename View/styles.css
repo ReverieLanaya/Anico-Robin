@@ -72,6 +72,7 @@
     margin-top: 0px;
     padding: 20px;
     height: 80vh;
+    position: fixed;
 
 
 }
@@ -125,7 +126,15 @@ a:visited {
 
 /* partie milieu */
 
+.milieu {
 
+    padding-left: 18%;
+}
+
+
+.first_section {
+    height: 37vw;
+}
 
 
 .slide_section {
@@ -155,10 +164,11 @@ a:visited {
 
 
 .descri_slide img {
-    max-width: 50%;
+    max-width: 80%;
     top: 15%;
     z-index: 2;
-    position: fixed;
+    position: relative;
+    margin-top: -25%;
 }
 
 
@@ -193,3 +203,31 @@ a:visited {
     background-color: #717171;
   }
 
+
+
+  /* PARTIE NOUVEAUTE */
+
+  /*////////////// A OPTIMISER //////////////*/
+
+.nouveaute, .populaires, .finis {
+    display: grid;
+    padding-left: 2vw;
+}
+
+
+.nouv_part, .pop_part, .finis_part {
+
+    display: flex;
+
+}
+
+.nouv_card , .pop_card, .finis_card {
+    padding: 1vw;
+    border: solid black;
+    width: fit-content;
+    margin-right: 2vw;
+}
+
+.nouv_part img, .pop_part img, .finis_part img {
+    width: 10vw;
+}
