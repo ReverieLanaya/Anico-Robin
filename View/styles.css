@@ -5,7 +5,12 @@
     display: flex;
     background-color:rgb(99, 88, 99);
     justify-content: space-between;
-    padding: 0.5% 2%;
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    z-index: 9;
 
 }
 
@@ -14,6 +19,8 @@
     max-width: 200px;
     font-size: 7px;
     display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .recherche {
@@ -24,8 +31,9 @@
     border-color: blueviolet;
     border-width: 1px;
     border-radius: 55px;
-    height:60px;
+    height:50px;
     padding-left: 2%;
+    margin-top: 10px;
 
 }
 
@@ -43,6 +51,7 @@
 .connexion_header {
     display: flex;
     align-items: center;
+    padding-right: 2%;
 
 }
 
@@ -68,11 +77,12 @@
     background-color: rgb(72, 58, 78);
     color: rgb(202, 201, 199);
     left: 0;
-    width: 17%;
+    width: 12%;
     margin-top: 0px;
     padding: 20px;
     height: 80vh;
     position: fixed;
+    top: 70px;
 
 
 }
@@ -96,7 +106,7 @@ a {
     padding: 20px;
 }
 
-a:visited {
+.gauche a:visited {
     color: rgb(202, 201, 199);
   }
 
@@ -127,8 +137,8 @@ a:visited {
 /* partie milieu */
 
 .milieu {
-
-    padding-left: 18%;
+    top: 70px;
+    margin: auto;
 }
 
 
@@ -139,6 +149,8 @@ a:visited {
 
 .slide_section {
     margin: 5% 0% 0% 5% ;
+    padding-top: 20px;
+    height: 60vh;
 }
 .slide_texte {
     position: relative;
@@ -165,7 +177,6 @@ a:visited {
 
 .descri_slide img {
     max-width: 80%;
-    top: 15%;
     z-index: 2;
     position: relative;
     margin-top: -25%;
@@ -207,7 +218,7 @@ a:visited {
 
   /* PARTIE NOUVEAUTE */
 
-  /*////////////// A OPTIMISER //////////////*/
+
 
 .nouveaute, .populaires, .finis {
     display: grid;
@@ -215,19 +226,69 @@ a:visited {
 }
 
 
-.nouv_part, .pop_part, .finis_part {
-
+.card_part {
     display: flex;
+}
+
+.titre_card {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    color: black;
+}
+
+.titre_card a {
+    align-self: center;
+    background-color: #717171;
+    padding: 7px;
+    border-radius: 7px;
+    text-decoration: underline;
 
 }
 
-.nouv_card , .pop_card, .finis_card {
+.titre_card a:visited {
+    color: black;
+
+  }
+
+.card {
     padding: 1vw;
     border: solid black;
     width: fit-content;
     margin-right: 2vw;
 }
 
-.nouv_part img, .pop_part img, .finis_part img {
-    width: 10vw;
+.card img {
+    width: 7vw;
 }
+
+  /*////////////// A OPTIMISER //////////////*/
+
+.droite {
+    top: 70px;
+    right: 0;
+    position: fixed;
+    width: 330px;
+    height: 92.3%;
+    background-color: #c287e4;
+    overflow-y: scroll;
+}
+
+.droite::-webkit-scrollbar {
+    display: none;
+  }
+
+.droite_card { 
+    display: flex;
+    padding-bottom: 20px;    
+    margin: 20px;
+    border-bottom: black solid;
+}
+
+.droite_card img {
+    width: 70px;
+    padding-right: 20px;
+}
+
+
+

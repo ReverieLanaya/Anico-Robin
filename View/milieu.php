@@ -150,117 +150,270 @@
 
         </div>
 
-    <!-- PARTIE CARD 1 -->
-        <div class="nouveaute">
+    <!-- PARTIE CARD -->
+        <div class="second_section">
+                <!-- PARTIE CARD 1 -->
+                <div class="nouveaute">
+                        <div class="titre_card">
+                            <h3>Nouveauté</h3>
+                            <a href="./index.php">Voir plus</a>
+                        </div>
+                        
+                        <div class="card_part">
 
+                            <div class="card">
+                                <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                                <h4>Yozakura Family</h4>
+                                <h4>27 Episodes</h4>
+                            </div>
 
-            <h3>Nouveauté</h3>
-            <div class="nouv_part">
+                            <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
 
-                <div class="nouv_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
+                            <div class="card">
+                                <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                                <h4>Yozakura Family</h4>
+                                <h4>27 Episodes</h4>
+                            </div>
+
+                            <div class="card">
+                                <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                                <h4>Yozakura Family</h4>
+                                <h4>27 Episodes</h4>
+                            </div>
+
+                            <div class="card">
+                                <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                                <h4>Yozakura Family</h4>
+                                <h4>27 Episodes</h4>
+                            </div>
+
+                        </div>
+
                 </div>
+                <!-- PARTIE CARD 2 -->
+                <div class="populaires">
 
-                <div class="nouv_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
+                    <div class="titre_card">
+                                <h3>Nouveauté</h3>
+                                <a href="./index.php">Voir plus</a>
+                            </div>
+                    <div class="card_part">
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                    </div>
+
                 </div>
+                <!-- PARTIE CARD 3 -->
+                <div class="finis">
 
-                <div class="nouv_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
+                    <div class="titre_card">
+                        <h3>Nouveauté</h3>
+                        <a href="./index.php">Voir plus</a>
+                    </div>
+                    <div class="card_part">
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
+                            <h4>Yozakura Family</h4>
+                            <h4>27 Episodes</h4>
+                        </div>
+
+                    </div>
+
                 </div>
-
-                <div class="nouv_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-            </div>
-
-
-    </div>
-
-        <!-- PARTIE CARD 2 -->
-    <div class="populaires">
-
-
-            <h3>Populaires</h3>
-            <div class="pop_part">
-
-                <div class="pop_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-                <div class="pop_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-                <div class="pop_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-                <div class="pop_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-            </div>
-
-
-    </div>
-
-
-
-    <!-- PARTIE CARD 3 -->
-        <div class="finis">
-
-
-            <h3>Recement finis</h3>
-            <div class="finis_part">
-
-                <div class="finis_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-                <div class="finis_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-                <div class="finis_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-                <div class="finis_card">
-                    <img src="/View/pics/yozakura.jpg" alt="Mission Yozakura affiche">
-                    <h4>Yozakura Family</h4>
-                    <h4>27 Episodes</h4>
-                </div>
-
-            </div>
-
 
         </div>
 
+
     </div>
+
+    <!-- ///////////////////////   DROITE   ///////////////////////// -->
+
+    <div class="droite">
+            <!-- PARTIE CARD DROITE -->
+             <h3>Les plus aimés</h3>
+
+             <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+             </div>
+
+             <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="droite_card">
+
+                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+
+                <div class="droite_card_description">
+
+                    <h4>Yozakura</h4>
+                    <p class="droite_episode">
+                        27 episodes  (◐ω◑ )
+                    
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+    
+              </div>
+
+
 
     
 
