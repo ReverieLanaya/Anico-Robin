@@ -9,7 +9,7 @@
 include('header.php');
 
 
-include('milieu.php');
+include('contenu_populaires.php');
 
 include('gauche.php');
 include('droite.php');

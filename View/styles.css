@@ -77,7 +77,7 @@
     background-color: rgb(72, 58, 78);
     color: rgb(202, 201, 199);
     left: 0;
-    width: 12%;
+    width: 15%;
     margin-top: 0px;
     padding: 20px;
     height: 80vh;
@@ -139,6 +139,7 @@ a {
 .milieu {
     top: 70px;
     margin: auto;
+    width: 60%;
 }
 
 
@@ -154,11 +155,13 @@ a {
 }
 .slide_texte {
     position: relative;
-    max-width: 20%;
+    max-width: 25%;
     padding: 20px;
     background-color: rgb(35, 24, 46);
     color: rgb(228, 226, 223);
     z-index: 5;
+    max-height: 300px;
+    overflow-y: scroll;
 }
 
 .carroussel_btn {
@@ -176,10 +179,10 @@ a {
 
 
 .descri_slide img {
-    max-width: 80%;
+    max-width: 50%;
     z-index: 2;
-    position: relative;
-    margin-top: -25%;
+    position: absolute;
+    top: 70px;
 }
 
 
@@ -220,7 +223,7 @@ a {
 
 
 
-.nouveaute, .populaires, .finis {
+.nouveaute, .populaires_card, .finis {
     display: grid;
     padding-left: 2vw;
 }
@@ -268,10 +271,14 @@ a {
     top: 70px;
     right: 0;
     position: fixed;
-    width: 330px;
+    width: 15%;
     height: 92.3%;
     background-color: #c287e4;
     overflow-y: scroll;
+}
+
+.droite h3 {
+    margin-left: 30px;
 }
 
 .droite::-webkit-scrollbar {
@@ -291,4 +298,18 @@ a {
 }
 
 
+/* PARTIE CONTENU POPULAIRES  */
 
+.contenu_populaires {
+    justify-self: center;
+    margin-top: 70px;
+}
+
+.populaires {
+    margin: 30px;
+    max-width: 60% ;
+}
+.populaires h3 {
+    justify-self: center;
+    font-size: 2.5rem;
+}
