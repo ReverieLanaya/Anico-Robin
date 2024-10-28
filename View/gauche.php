@@ -21,7 +21,7 @@
     
                 </a>
     
-                <a href="index.php" class="liens_gauche">
+                <a href="nouveaute.php" class="liens_gauche">
                     <div class="icone_gauche">
                         <img src="/View/pics/home_icon.png" alt="icone accueil">
                     </div>
@@ -30,7 +30,7 @@
     
                 </a>
     
-                <a href="index.php" class="liens_gauche">
+                <a href="categorie.php" class="liens_gauche">
                     <div class="icone_gauche">
                         <img src="/View/pics/home_icon.png" alt="icone accueil">
                     </div>

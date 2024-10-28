@@ -231,6 +231,8 @@ a {
 
 .card_part {
     display: flex;
+    position: relative;
+    /* top: 100px; */
 }
 
 .titre_card {
@@ -300,16 +302,56 @@ a {
 
 /* PARTIE CONTENU POPULAIRES  */
 
-.contenu_populaires {
+.contenu_page_card {
     justify-self: center;
     margin-top: 70px;
 }
 
-.populaires {
+.page_card {
     margin: 30px;
-    max-width: 60% ;
+    max-width: 100% ;
 }
-.populaires h3 {
-    justify-self: center;
+.page_card h3, .categorie_card h3 {
     font-size: 2.5rem;
+    width: fit-content;
+    justify-self: center;
+    padding-top: 40px;
+}
+
+/* .page_card h3{
+
+} */
+
+/* PARTIE CATEGORIE */
+
+
+.categorie_card_part {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px
+}
+
+
+.categorie_card_part h4 {
+    margin: 10px;
+    font-size: 2rem;
+    justify-self: center;
+}
+.categorie_card_details img{
+    width: 300px;
+    height: 170px;
+
+}
+
+.categorie_card_part a {
+    padding: 10px;
+}
+
+.categorie_card_part a:hover {
+    background-color: bisque;
+}
+*.categorie_card_part a:visited{
+    color: black;
 }
