@@ -47,6 +47,15 @@
                     <span> Voir mon profil</span>
     
                 </a>
+
+                <a href="admin.php" class="liens_gauche">
+                    <div class="icone_gauche">
+                        <img src="/View/pics/home_icon.png" alt="icone accueil">
+                    </div>
+    
+                    <span> Page Admin</span>
+    
+                </a>
     
             </div>
     

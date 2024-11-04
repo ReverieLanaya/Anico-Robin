@@ -355,3 +355,13 @@ a {
 *.categorie_card_part a:visited{
     color: black;
 }
+
+
+
+/* PARTIE ADMIN */
+
+.add_categorie {
+    justify-self: center;
+    width: 60%;
+    margin-top: 70px;
+}

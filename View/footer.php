@@ -5,6 +5,6 @@
 
 
 
-<script src="script.js"></script>
+<script src="View/script.js"></script>
 </body>
 </html>

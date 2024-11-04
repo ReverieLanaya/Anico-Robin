@@ -6,7 +6,7 @@
 
              <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
@@ -23,7 +23,7 @@
 
              <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
@@ -40,7 +40,7 @@
 
             <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
@@ -57,7 +57,7 @@
 
             <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
@@ -74,7 +74,7 @@
 
             <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
@@ -91,7 +91,7 @@
 
             <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
@@ -108,7 +108,7 @@
 
             <div class="droite_card">
 
-                <img src="./pics/yozakura.jpg" alt="photo yozakura">
+                <img src="./view/pics/yozakura.jpg" alt="photo yozakura">
 
                 <div class="droite_card_description">
 
