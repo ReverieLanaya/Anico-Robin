@@ -1,9 +1,14 @@
 
 
+body, .titre_card h3, .categorie_card_details h4  {
+    background-color: rgb(56, 50, 50);
+    color: rgb(177, 184, 184);
+}
+
 .header {
 
     display: flex;
-    background-color:rgb(99, 88, 99);
+    background-color: rgb(80, 78, 78);
     justify-content: space-between;
     position: fixed;
     width:100%;
@@ -74,15 +79,16 @@
     display: flex;
 }
 .gauche {
-    background-color: rgb(72, 58, 78);
+    background-color: rgb(53, 50, 50);
     color: rgb(202, 201, 199);
     left: 0;
     width: 15%;
     margin-top: 0px;
     padding: 20px;
-    height: 80vh;
+    height: 100vh;
     position: fixed;
     top: 70px;
+    border-right: solid 2px white;
 
 
 }
@@ -275,8 +281,9 @@ a {
     position: fixed;
     width: 15%;
     height: 92.3%;
-    background-color: #c287e4;
+    background-color: rgb(53, 50, 50);
     overflow-y: scroll;
+    border-left: solid 2px white;
 }
 
 .droite h3 {
@@ -350,7 +357,7 @@ a {
 }
 
 .categorie_card_part a:hover {
-    background-color: bisque;
+    background-color: rgb(90, 89, 87);
 }
 *.categorie_card_part a:visited{
     color: black;
@@ -360,8 +367,39 @@ a {
 
 /* PARTIE ADMIN */
 
-.add_categorie {
+.contenu_admin {
     justify-self: center;
     width: 60%;
-    margin-top: 70px;
+    margin-top: 150px;
+    left: 25% ;
 }
+
+.form_ajout_categorie {
+    position: relative;
+    width: fit-content;
+    border: solid black 2px;
+    padding: 20px;
+}
+
+.form_ajout_anime {
+    border: solid black 2px;
+    padding: 20px;
+}
+
+.form_ajout_categorie2 label {
+    display: block;
+    width: 170px;
+}
+.form_ajout_categorie2 :nth-child(10) {
+    height: 100px;
+    width: 400px;
+}
+
+.form_ajout_categorie2 label,.form_ajout_categorie2 input {
+    padding: 5px;
+}
+
+.categorie_ajoutee  {
+    padding-top: 20px;
+}
+

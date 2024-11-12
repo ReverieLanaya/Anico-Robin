@@ -2,13 +2,15 @@
    
 try { 
 
-$bdd = new PDO("mysql:host=localhost;dbname=anicodb","root","", 
-array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+require 'model/connexion_bdd.php';   
 
 $req = $bdd->prepare('INSERT INTO categorie (categorie_name) VALUES (?)'); 
 $req->bindParam(1, $nom_categorie, PDO::PARAM_STR); 
 $req->execute(); 
-echo "Félicitations, la catégorie {$nom_categorie} a bien été ajoutée dans la BDD <br><br>"; 
+echo "<div class='categorie_ajoutee'>
+Félicitations, la catégorie {$nom_categorie} a bien été ajoutée dans la BDD <br><br>
+
+</div>"; 
 } 
 catch(Exception $error) 
 { 
