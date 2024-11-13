@@ -68,6 +68,10 @@
 
                     <button type="submit" name="submit_anime">Ajouter</button>
                 </div>
+
+                <?php 
+                require 'model/anime_check_model.php';
+                ?>
                 
             </form>
 
