@@ -27,7 +27,7 @@
     <div class="admin_anime">
         <h3>Ajouter un nouvel anime</h3>
 
-        <form method="POST" class="form_ajout_anime">
+        <form method="POST" class="form_ajout_anime" enctype="multipart/form-data">
                 <div class="form_ajout_categorie2">
                     <label for="nom_anime">Nom de l'anime:</label>
                     <input type="text" id="nom_anime" name="nom_anime" required>
@@ -37,26 +37,17 @@
                     
 
                     <!-- ////////// A FINALISER PLUS TARD AVEC BDD -->
-                    <label for="categorie_anime">Catégorie:</label>
-                    <select id="categorie_anime" name="categorie_anime" required> 
+                    <?php require 'controller/categorie_get_controller.php'; 
+                    $categorieController = new CategorieController(); 
+                    $categories = $categorieController->getCategories(); 
+                    ?>
 
-                    <?php 
-                    $categories = [
-                        ["categories" => "Aventure"],
-                        ["categories" => "Fantaisie"],
-                        ["categories" => "Action"],
-                        ["categories" => "Drama"],
-                        ["categories" => "One piece !!"],
-                        // AJOUTER LES AUTRES ICI 
-                    ];
-
-                    foreach ($categories as $categorie): ?> 
-
-                        <option value="<?= $categorie['categories'] ?>">
-                            <?= $categorie['categories'] ?>
-                        </option>
-                        
-                <?php endforeach; ?>
+                    <label for="categorie_anime">Catégorie:</label> 
+                    <select id="categorie_anime" name="categorie_anime[]" multiple required> 
+                        <?php foreach($categories as $categorie): ?> 
+                            <option value="<?= $categorie['categorie_id'];?>">
+                            <?= $categorie['categorie_name']; ?>
+                            </option> <?php endforeach; ?> </select>
                          </select>
                          
 
@@ -70,7 +61,7 @@
                 </div>
 
                 <?php 
-                require 'model/anime_check_model.php';
+                require 'controller/anime_ajout_controller.php';
                 ?>
                 
             </form>
