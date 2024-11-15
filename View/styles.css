@@ -236,9 +236,9 @@ a {
 
 
 .card_part {
-    display: flex;
-    position: relative;
-    /* top: 100px; */
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
 }
 
 .titre_card {
@@ -265,12 +265,23 @@ a {
 .card {
     padding: 1vw;
     border: solid black;
-    width: fit-content;
-    margin-right: 2vw;
+    width: 8vw;
+    text-align: center;
 }
 
 .card img {
     width: 7vw;
+    height: 12vw;
+}
+
+.card_part h4 {
+    max-width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+
+.card :nth-child(2){
+    height: 2vw;
 }
 
   /*////////////// A OPTIMISER //////////////*/
@@ -325,9 +336,7 @@ a {
     padding-top: 40px;
 }
 
-/* .page_card h3{
 
-} */
 
 /* PARTIE CATEGORIE */
 
@@ -374,6 +383,10 @@ a {
     left: 25% ;
 }
 
+.input_form {
+    display: flex;
+    margin: 20px;
+}
 .form_ajout_categorie {
     position: relative;
     width: fit-content;
@@ -381,25 +394,37 @@ a {
     padding: 20px;
 }
 
-.form_ajout_anime {
+.form_ajout_anime, .form_edit_anime {
     border: solid black 2px;
     padding: 20px;
 }
 
-.form_ajout_categorie2 label {
-    display: block;
+.form_ajout_categorie2 label, .form_ajout_anime2 label {
     width: 170px;
 }
-.form_ajout_categorie2 :nth-child(10) {
-    height: 100px;
-    width: 400px;
+.input_resume {
+    height: 200px;
+    width: 600px;
 }
 
-.form_ajout_categorie2 label,.form_ajout_categorie2 input {
+.form_ajout_categorie2 label,.form_ajout_anime2 input {
     padding: 5px;
 }
 
 .categorie_ajoutee  {
     padding-top: 20px;
+}
+.form_ajout_anime button, .form_edit_anime button, .form_ajout_categorie button {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+.form_ajout_anime button:hover, .form_edit_anime button:hover, .form_ajout_categorie button:hover {
+    background-color: #8615c7;
 }
 

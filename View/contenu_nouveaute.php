@@ -2,37 +2,42 @@
 
     <div class="page_card">
 
-            <h3>Les nouveautés</h3>
+        <h3>Les nouveautés</h3>
 
-        
-            <div class="card_part">
+    
+        <div class="card_part">
 
 
-                <!-- TEST PHP ICI  -->
-                
-                <?php 
-                    $shows = [
-                        ["title" => "Yozakura Family", "episodes" => 27, "image" => "/View/pics/yozakura.jpg"],
-                        ["title" => "Another Show", "episodes" => 20, "image" => "/View/pics/yozakura.jpg"],
-                        ["title" => "Third Show", "episodes" => 30, "image" => "/View/pics/yozakura.jpg"],
-                        ["title" => "Third Show", "episodes" => 30, "image" => "/View/pics/yozakura.jpg"],
-                        ["title" => "Third Show", "episodes" => 30, "image" => "/View/pics/yozakura.jpg"],
-                        // AJOUTER LES AUTRES ICI 
-                    ];
-                    
+            <!-- TEST PHP ICI  -->
+            
+            <?php
+                require 'model/connexion_bdd.php';
+
+                try {
+                    // Préparation de la requête
+                    $req = $bdd->query('SELECT anime_name, anime_picture FROM anime');
+
+                    // Exécution de la requête et récupération des résultats
+                    $shows = $req->fetchAll(PDO::FETCH_ASSOC);
+
+                    // Génération du code HTML
                     foreach ($shows as $show) {
                         echo '<div class="card">
-                                <img src="' . $show['image'] . '" alt="Affiche de ' . $show['title'] . '">
-                                <h4>' . $show['title'] . '</h4>
-                                <h4>' . $show['episodes'] . ' Episodes</h4>
+                                <img src="' . $show['anime_picture'] . '" alt="Affiche de ' . $show['anime_name'] . '">
+                                <h4>' . $show['anime_name'] . '</h4>
                             </div>';
                     }
+                } catch (Exception $error) {
+                    echo "$error";
+                    echo 'Erreur : ' . $e->getMessage();
+                }
                 ?>
 
 
-            
 
-            </div>
+        
+
+        </div>
 
     </div>
 
