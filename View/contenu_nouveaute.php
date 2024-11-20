@@ -11,27 +11,27 @@
             <!-- TEST PHP ICI  -->
             
             <?php
-                require 'model/connexion_bdd.php';
+            require 'model/connexion_bdd.php';
 
-                try {
-                    // Préparation de la requête
-                    $req = $bdd->query('SELECT anime_name, anime_picture FROM anime');
+            try {
+                // Préparation de la requête
+                $req = $bdd->query('SELECT anime_id, anime_name, anime_picture FROM anime');
 
-                    // Exécution de la requête et récupération des résultats
-                    $shows = $req->fetchAll(PDO::FETCH_ASSOC);
+                // Exécution de la requête et récupération des résultats
+                $shows = $req->fetchAll(PDO::FETCH_ASSOC);
 
-                    // Génération du code HTML
-                    foreach ($shows as $show) {
-                        echo '<div class="card">
-                                <img src="' . $show['anime_picture'] . '" alt="Affiche de ' . $show['anime_name'] . '">
-                                <h4>' . $show['anime_name'] . '</h4>
-                            </div>';
-                    }
-                } catch (Exception $error) {
-                    echo "$error";
-                    echo 'Erreur : ' . $e->getMessage();
+                // Génération du code HTML
+                foreach ($shows as $show) {
+                    echo '<div class="card">
+                            <img src="' . $show['anime_picture'] . '" alt="Affiche de ' . $show['anime_name'] . '"> 
+                            <a href="anime_info.php?id=' . $show['anime_id'] . '">' . $show['anime_name'] . '</a>
+                        </div>';
                 }
-                ?>
+            } catch (Exception $error) {
+                echo 'Erreur : ' . $error->getMessage();
+            }
+            ?>
+
 
 
 

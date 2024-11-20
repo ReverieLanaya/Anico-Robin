@@ -1,6 +1,6 @@
 
 
-body, .titre_card h3, .categorie_card_details h4  {
+body, .titre_card h3, .categorie_card_details h4, a  {
     background-color: rgb(56, 50, 50);
     color: rgb(177, 184, 184);
 }
@@ -112,7 +112,7 @@ a {
     padding: 20px;
 }
 
-.gauche a:visited {
+.gauche a:visited, .card_part a:visited, .liste_categories_anime a:visited {
     color: rgb(202, 201, 199);
   }
 
@@ -142,7 +142,8 @@ a {
 
 /* partie milieu */
 
-.milieu {
+.milieu, .anime_detail {
+    position: relative;
     top: 70px;
     margin: auto;
     width: 60%;
@@ -426,5 +427,32 @@ a {
 
 .form_ajout_anime button:hover, .form_edit_anime button:hover, .form_ajout_categorie button:hover {
     background-color: #8615c7;
+}
+
+
+/* /////////PARTIE INFO ANIME///////// */
+
+.anime_detail img  {
+    width: 300px;
+    margin: 40px ;
+}
+.anime_detail {
+    display: flex;
+
+}
+
+.anime_info {
+    margin-top: 50px;
+}
+
+.anime_categories {
+    padding:  30px 0px;
+}
+
+.liste_categories_anime a {
+    padding: 6px;
+    background-color: #494848;
+
+    border-radius: 5px;
 }
 
