@@ -42,9 +42,11 @@
                         <input type="text" id="episode_anime" name="episode_anime" required>
                     </div>
 
-                    <?php require 'controller/categorie_get_controller.php'; 
-                    $categorieController = new CategorieController(); 
-                    $categories = $categorieController->getCategories(); 
+                    <?php 
+                    
+                    require 'model/connexion_bdd.php';
+                    require 'model/categorie_get_model.php';
+
                     ?>
 
                     <div class="input_form">

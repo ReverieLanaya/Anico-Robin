@@ -1,6 +1,6 @@
 
 
-body, .titre_card h3, .categorie_card_details h4, a  {
+body, .titre_card h3, .categorie_card_details h4, a, .gauche  {
     background-color: rgb(56, 50, 50);
     color: rgb(177, 184, 184);
 }
@@ -79,7 +79,6 @@ body, .titre_card h3, .categorie_card_details h4, a  {
     display: flex;
 }
 .gauche {
-    background-color: rgb(53, 50, 50);
     color: rgb(202, 201, 199);
     left: 0;
     width: 15%;

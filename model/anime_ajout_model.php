@@ -5,12 +5,24 @@ try {
     require 'model/connexion_bdd.php';   
     echo"<div>appel insertion des info dans bdd </div>";
 
-    $req = $bdd->prepare('INSERT INTO anime (anime_name, anime_episodes, anime_picture, anime_resume) VALUES (?,?,?,?)'); 
- 
+    // Fonction pour générer un slug
+    function generateSlug($string) {
+        $string = strtolower($string);
+        $string = preg_replace('/[^a-z0-9-]+/', '-', $string);
+        $string = trim($string, '-');
+        return $string;
+    }
+
+    // Génération du slug pour le nom de l'anime
+    $slug = generateSlug($nom_anime);
+
+    $req = $bdd->prepare('INSERT INTO anime (anime_name, anime_episodes, anime_picture, anime_resume, slug) VALUES (?,?,?,?,?)'); 
+
     $req->bindParam(1, $nom_anime, PDO::PARAM_STR);
     $req->bindParam(2, $episode_anime, PDO::PARAM_STR); 
     $req->bindParam(3, $target_file, PDO::PARAM_STR); 
     $req->bindParam(4, $resume_anime, PDO::PARAM_STR); 
+    $req->bindParam(5, $slug, PDO::PARAM_STR); 
     $req->execute(); 
 
     echo "<div class='categorie_ajoutee'>
