@@ -42,22 +42,21 @@
                         <input type="text" id="episode_anime" name="episode_anime" required>
                     </div>
 
-                    <?php 
-                    
-                    require 'model/connexion_bdd.php';
-                    require 'model/categorie_get_model.php';
-
+                    <?php
+                    require 'controller/categorie_get_controller.php'; 
                     ?>
 
                     <div class="input_form">
-                        <label for="categorie_anime">Catégorie:</label> 
-                        <select id="categorie_anime" name="categorie_anime[]" multiple required> 
-                            <?php foreach($categories as $categorie): ?> 
-                                <option value="<?= $categorie['categorie_id'];?>">
-                                <?= $categorie['categorie_name']; ?>
-                                </option> <?php endforeach; ?> </select>
-                            </select>
+                        <label for="categorie_anime">Catégorie:</label>
+                        <select id="categorie_anime" name="categorie_anime[]" multiple required>
+                            <?php foreach($categories as $categorie): ?>
+                                <option value="<?= htmlspecialchars($categorie['categorie_id']); ?>">
+                                    <?= htmlspecialchars($categorie['categorie_name']); ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
+
                     
                          
                     <div class="input_form">

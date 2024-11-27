@@ -1,14 +1,14 @@
 <?php
+class CategorieModel {
+    private $db;
 
-require 'model/connexion_bdd.php';
+    public function __construct($database) {
+        $this->db = $database;
+    }
 
-
-try {
-    $req = $bdd->query('SELECT categorie_id, categorie_name FROM categorie');
-    return $req->fetchAll(PDO::FETCH_ASSOC);
-} catch(Exception $error) {
-    return [];
+    public function getCategories() {
+        $stmt = $this->db->query('SELECT * FROM categorie');
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
-    
-
 ?>
