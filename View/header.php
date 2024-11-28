@@ -121,8 +121,11 @@
 
 
                     
-                        <button type="submit">Envoyer</button>
+                        <button type="submit" name="submit_inscription" >Envoyer</button>
                     </form>
+
+                    <?php
+                    require './controller/inscription_controller.php' ?>
 
                     <div class="retour_connex">
 

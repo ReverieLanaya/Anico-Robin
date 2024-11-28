@@ -13,7 +13,6 @@ try {
         return $string;
     }
 
-    // Génération du slug pour le nom de l'anime
     $slug = generateSlug($nom_anime);
 
     $req = $bdd->prepare('INSERT INTO anime (anime_name, anime_episodes, anime_picture, anime_resume, slug) VALUES (?,?,?,?,?)'); 
@@ -32,7 +31,7 @@ try {
 
     // Récupérer l'ID du nouvel anime 
     $anime_id = $bdd->lastInsertId(); 
-    // Ajouter les catégories à l'anime 
+
     if (!empty($categorie_ids)) { 
         try { 
             $catReq = $bdd->prepare('INSERT INTO anime_categorie (anime_id, categorie_id) VALUES (?, ?)');
