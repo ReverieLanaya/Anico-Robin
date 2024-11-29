@@ -33,8 +33,12 @@ function openForm() {
 };
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+  var forms = document.querySelectorAll(".myForm");
+  forms.forEach(function(form) {
+      form.style.display = "none";
+  });
 }
+
 
 // BOUTTON MDP OUBLIE
 function openForm1() {
@@ -44,10 +48,6 @@ function openForm1() {
 function closeForm1() {
   document.getElementById("myForm1").style.display = "none";
 }
-
-
-
-
 
 // BOUTTON S'INSCRIRE'
 function openForm2() {

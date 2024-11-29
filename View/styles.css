@@ -71,7 +71,7 @@ body, .titre_card h3, .categorie_card_details h4, a, .gauche  {
 /* PARTIE INSCRIPTION CONNEXION  */
 
 .login_popup, .mdp_oublie, .inscription  {
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -82,16 +82,10 @@ body, .titre_card h3, .categorie_card_details h4, a, .gauche  {
     backdrop-filter: blur(10px);
 }
 
-.mdp_oublie {
+.mdp_oublie, .inscription {
     z-index: 10;
+    display: none;
 }
-
-.inscription {
-    z-index: 10;
-}
-
-
-
 
 .login_info {
     position: relative;
@@ -483,7 +477,7 @@ a {
     padding: 20px;
 }
 
-.form_ajout_anime, .form_edit_anime {
+.form_ajout_anime, .form_edit_anime, .admin_account form {
     border: solid black 2px;
     padding: 20px;
 }
@@ -503,7 +497,9 @@ a {
 .categorie_ajoutee  {
     padding-top: 20px;
 }
-.form_ajout_anime button, .form_edit_anime button, .form_ajout_categorie button {
+.contenu_admin  button {
+    background-color: rgb(155, 155, 155);
+    color: black;
     display: block;
     text-align: center;
     margin: auto;
@@ -513,7 +509,7 @@ a {
     border: none;
 }
 
-.form_ajout_anime button:hover, .form_edit_anime button:hover, .form_ajout_categorie button:hover {
+.contenu_admin button:hover {
     background-color: #8615c7;
 }
 

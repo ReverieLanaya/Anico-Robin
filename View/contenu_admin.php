@@ -124,5 +124,34 @@
 
     </div>
 
+    <div class="admin_account">
+        
+
+        <h3>Créer un compte admin</h3>
+
+
+        <form method="post" class="login_form">
+
+                <label for="user_mail">Nom d'utilisateur</label>
+                <input type="text" id="user_name" name="user_name" required>
+
+                <label for="user_mail">Adresse mail</label>
+                <input type="text" id="user_mail" name="user_mail" required>
+
+                <label for="user_mail">Mot de passe</label>
+                <input type="text" id="user_mdp" name="user_mdp" required>
+
+                <label for="user_mail">Confirmer le mot de passe</label>
+                <input type="text" id="user_mdp2" name="user_mdp2" required>
+
+
+
+            <button type="submit" name="submit_add_admin" >Envoyer</button>
+        </form>
+
+        <?php
+        require './controller/ajout_admin_controller.php' ?>
+
+    </div>
 
 </div>

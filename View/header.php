@@ -14,15 +14,32 @@
             <h3>Rechercher</h3>
         </div>
 
-        <div class="connexion_header" onclick="openForm()">
+
+        <?php
+
+        require ('./controller/connexion_controller.php');
+        if (isset($_SESSION['user_id'])) { 
+            echo '<h4>' . htmlspecialchars($_SESSION['user_name']) . '</h4>';
+            echo '<img src="" alt="">';
+        } else {
+            echo '
+            <div class="connexion_header" onclick="openForm()">
+                <button>Se connecter</button>
+            </div>';
+        }
+        ?>
+
+
+
+        <!-- <div class="connexion_header" onclick="openForm()">
             <button>
                 Se  connecter 
             </button>
-        </div>
+        </div> -->
 
 </div>
 
-<div class="login_popup" id="myForm">
+<div class="login_popup myForm" id="myForm">
 
     <div class="login_info">
 
@@ -37,12 +54,12 @@
 
             <form method="post" class="login_form">
                
-                    <label for="username">Nom d'utilisateur:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="user_mail">Adresse mail:</label>
+                    <input type="text" id="user_mail" name="user_mail" required>
                 
                 
-                    <label for="password">Mot de passe:</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="user_mdp">Mot de passe:</label>
+                    <input type="password" id="user_mdp" name="user_mdp" required>
                
                 <button type="submit">Se connecter</button>
             </form>
@@ -59,7 +76,7 @@
 
     </div>
 
-    <div class="mdp_oublie" id="myForm1">
+    <div class="mdp_oublie myForm" id="myForm1">
 
         <div class="login_info" >
 
@@ -92,7 +109,7 @@
         </div>
     </div>
 
-    <div class="inscription" id="myForm2" >
+    <div class="inscription myForm" id="myForm2" >
 
         <div class="login_info"  >
 

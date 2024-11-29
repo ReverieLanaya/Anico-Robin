@@ -16,6 +16,4 @@ class AnimeModel {
         $stmt = $this->db->prepare("UPDATE anime SET nb_visite = nb_visite + 1 WHERE anime_id = ?");
         $stmt->execute([$anime_id]);
     }
-
-    // Autres méthodes du modèle...
 }

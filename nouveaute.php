@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require('view/head.php');
 include('view/header.php');
 

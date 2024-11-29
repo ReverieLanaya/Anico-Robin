@@ -22,7 +22,7 @@ try {
     } else {
         echo "<div>Cette adresse mail n'est pas prise et les deux mots de passe correspondent</div>";
         
-        require 'model/account_ajout_model.php';
+        require 'model/admin_ajout_model.php';
     }
 } catch (Exception $error) {
     echo 'Erreur : ' . $error->getMessage();
