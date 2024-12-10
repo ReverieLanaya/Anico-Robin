@@ -19,8 +19,24 @@
 
         require ('./controller/connexion_controller.php');
         if (isset($_SESSION['user_id'])) { 
-            echo '<h4>' . htmlspecialchars($_SESSION['user_name']) . '</h4>';
-            echo '<img src="" alt="">';
+            
+        echo ' 
+        <div class="connected_user" onclick="toggle_logout()">
+            <h4>' . htmlspecialchars($_SESSION['user_name']) . '</h4>
+            <img src="./View/pics/user_icon.png" alt="icone utilisateur"> 
+        </div>';
+
+        echo '
+        <div class="logout_screen" id="logout_screen">
+            <div class="modal-content">
+                <form action="logout.php" method="post"> 
+                    <button type="submit" name="logout">Se déconnecter</button>
+                </form>
+            </div>
+        </div>';
+
+
+
         } else {
             echo '
             <div class="connexion_header" onclick="openForm()">
@@ -61,7 +77,7 @@
                     <label for="user_mdp">Mot de passe:</label>
                     <input type="password" id="user_mdp" name="user_mdp" required>
                
-                <button type="submit">Se connecter</button>
+                <button type="submit" name="submit_connexion">Se connecter</button>
             </form>
 
             <div class="oubli_mdp">

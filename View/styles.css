@@ -138,8 +138,6 @@ body, .titre_card h3, .categorie_card_details h4, a, .gauche  {
 
 }
 
-
-
 .login_info2 {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
@@ -153,7 +151,36 @@ body, .titre_card h3, .categorie_card_details h4, a, .gauche  {
     display: block;
 }
 
+.connected_user  {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-right: 5vw;
+    width: 120px;
+    height: 50px;
+    background-color: #4b2064;
+    color: aliceblue;
+    border-radius: 25px;
+}
 
+.connected_user img {
+    height: 20px;
+}
+
+.logout_screen {
+    display: none;
+    position: fixed;
+    top: 150px;
+    right: 200px;
+    width: 150px;
+    height: 70px;
+    background-color: azure;
+}
+
+.show {
+    display: flex;
+}
 
 
 

@@ -59,5 +59,18 @@ function closeForm2() {
 }
 
 
+// FENETRE DECONNEXION
+function toggle_logout() {
+  var x = document.getElementById("logout_screen");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-
+document.addEventListener('click', (e) => {
+  if ( !e.target.closest('.logout_screen')) {
+    document.querySelector('.logout_screen').style.display = 'none'
+  }
+});
