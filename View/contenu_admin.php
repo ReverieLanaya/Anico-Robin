@@ -8,18 +8,23 @@
     <div class="admin_categorie">
         <h3>Ajouter une nouvelle catégorie</h3>
 
-        <form method="POST" class="form_ajout_categorie">
+        <form method="POST" class="form_ajout_categorie" enctype="multipart/form-data">
             <div class="form_ajout_categorie2">
                 <div class="input_form">
                     <label for="nom_categorie">Nom de la catégorie:</label>
-                    <input type="text" id="nom_categorie" name="nom_categorie" required>
+                    <input type="text" id="nom_categorie" name="nom_categorie" required>  
+                </div>
+
+                <div class="input_form">
+                    <label for="image_categorie">Image:</label>
+                    <input type="file" id="image_categorie" name="image_categorie" required>
                 </div>
 
                 <button type="submit" name="submit_categorie">Ajouter</button>
             </div>
 
             <?php 
-            require 'model/categorie_check_model.php';
+            require 'controller/categorie_ajout_controller.php';
             ?>
             
         </form>

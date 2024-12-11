@@ -19,7 +19,7 @@ if (isset($_POST['submit_anime'])) {
         echo "Catégories récupérées : "; 
         print_r($categorie_ids);
 
-        $target_dir = "view/pics/"; 
+        $target_dir = "view/pics/animes/"; 
         $target_file = $target_dir . basename($_FILES["image_anime"]["name"]); 
         $uploadOk = 1; 
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

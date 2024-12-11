@@ -3,60 +3,26 @@
             
             <div class="gauche_p1">
                 
-            <a href="index.php" class="liens_gauche">
-                    <div class="icone_gauche">
-                        <img src="/View/pics/home_icon.png" alt="icone accueil">
-                    </div>
-    
-                    <span> Accueil</span>
-    
-                </a>
-    
-                <a href="populaires.php" class="liens_gauche">
-                    <div class="icone_gauche">
-                        <img src="/View/pics/home_icon.png" alt="icone page populaires">
-                    </div>
-    
-                    <span> Populaires</span>
-    
-                </a>
-    
-                <a href="nouveaute.php" class="liens_gauche">
-                    <div class="icone_gauche">
-                        <img src="/View/pics/home_icon.png" alt="icone accueil">
-                    </div>
-    
-                    <span> Nouveauté</span>
-    
-                </a>
-    
-                <a href="categorie.php" class="liens_gauche">
-                    <div class="icone_gauche">
-                        <img src="/View/pics/home_icon.png" alt="icone accueil">
-                    </div>
-    
-                    <span> Catégories</span>
-    
-                </a>
-    
-                <a href="index.php" class="liens_gauche">
-                    <div class="icone_gauche">
-                        <img src="/View/pics/home_icon.png" alt="icone accueil">
-                    </div>
-    
-                    <span> Voir mon profil</span>
-    
-                </a>
+                <?php
+                $liens = [
+                    ["href" => "index.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Accueil"],
+                    ["href" => "populaires.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone page populaires", "text" => "Populaires"],
+                    ["href" => "nouveaute.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Nouveauté"],
+                    ["href" => "categorie.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Catégories"],
+                    ["href" => "index.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Voir mon profil"],
+                    ["href" => "admin.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Page Admin"],
+                ];
 
-                <a href="admin.php" class="liens_gauche">
-                    <div class="icone_gauche">
-                        <img src="/View/pics/home_icon.png" alt="icone accueil">
-                    </div>
-    
-                    <span> Page Admin</span>
-    
-                </a>
-    
+                foreach ($liens as $lien) {
+                    echo '
+                    <a href="' . htmlspecialchars($lien['href']) . '" class="liens_gauche">
+                        <div class="icone_gauche">
+                            <img src="' . htmlspecialchars($lien['img_src']) . '" alt="' . htmlspecialchars($lien['alt']) . '">
+                        </div>
+                        <span>' . htmlspecialchars($lien['text']) . '</span>
+                    </a>';
+                }
+                ?>    
             </div>
     
             <div class="gauche_p2">

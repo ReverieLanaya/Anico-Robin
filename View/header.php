@@ -5,12 +5,12 @@
 
            <div class="logo_header">    
 
-                <img src="/View/pics/anico_logo.jpeg" alt="Logo Anico Robin">    
+                <img src="/View/pics/autres/anico_logo.jpeg" alt="Logo Anico Robin">    
             
             </div> 
             
         <div class="recherche">
-            <img src="/View/pics/recherche_icone.png" alt="recherche">
+            <img src="/View/pics//icones/recherche_icone.png" alt="recherche">
             <h3>Rechercher</h3>
         </div>
 
@@ -23,7 +23,7 @@
         echo ' 
         <div class="connected_user" onclick="toggle_logout()">
             <h4>' . htmlspecialchars($_SESSION['user_name']) . '</h4>
-            <img src="./View/pics/user_icon.png" alt="icone utilisateur"> 
+            <img src="./View/pics/icones/user_icon.png" alt="icone utilisateur"> 
         </div>';
 
         echo '
@@ -44,14 +44,6 @@
             </div>';
         }
         ?>
-
-
-
-        <!-- <div class="connexion_header" onclick="openForm()">
-            <button>
-                Se  connecter 
-            </button>
-        </div> -->
 
 </div>
 
@@ -172,9 +164,5 @@
         </div>
     </div>
 
-
 </div>
-
-
-
 </header>

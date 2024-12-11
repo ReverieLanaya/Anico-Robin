@@ -61,16 +61,18 @@ function closeForm2() {
 
 // FENETRE DECONNEXION
 function toggle_logout() {
-  var x = document.getElementById("logout_screen");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var logoutScreen = document.getElementById("logout_screen");
+  if (logoutScreen.style.display === "none" || logoutScreen.style.display === "") {
+      logoutScreen.style.display = "flex";
   } else {
-    x.style.display = "none";
+      logoutScreen.style.display = "none";
   }
 }
 
+// Fermer le modal lorsque l'utilisateur clique en dehors du modal
 document.addEventListener('click', (e) => {
-  if ( !e.target.closest('.logout_screen')) {
-    document.querySelector('.logout_screen').style.display = 'none'
+  var logoutScreen = document.getElementById("logout_screen");
+  if (logoutScreen.style.display === 'flex' && !e.target.closest('.logout_screen') && !e.target.closest('.connected_user')) {
+      logoutScreen.style.display = 'none';
   }
 });

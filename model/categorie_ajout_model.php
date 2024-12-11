@@ -1,21 +1,15 @@
 <?php 
-   
-try { 
+require 'model/connexion_bdd.php';    
 
-require 'model/connexion_bdd.php';   
+try {
+    $query = $bdd->prepare('INSERT INTO categorie (categorie_name, categorie_picture) VALUES (?,?)');
+    $query->bindParam(1, $nom_categorie, PDO::PARAM_STR);
+    $query->bindParam(2, $target_file, PDO::PARAM_STR);
+    $query->execute();
 
-$req = $bdd->prepare('INSERT INTO categorie (categorie_name) VALUES (?)'); 
-$req->bindParam(1, $nom_categorie, PDO::PARAM_STR); 
-$req->execute(); 
-echo "<div class='categorie_ajoutee'>
-Félicitations, la catégorie {$nom_categorie} a bien été ajoutée dans la BDD <br><br>
-
-</div>"; 
-} 
-catch(Exception $error) 
-{ 
-    return $error->getMessage(); 
-
+    echo 'Catégorie ajoutée avec succès';
+} catch (Exception $e) {
+    echo $e;
 }
             
 ?>

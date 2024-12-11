@@ -10,22 +10,26 @@
 
                 <!-- TEST PHP ICI  -->
                 
-                <?php 
-                    $catrgorie = [
-                        ["title" => "Aventure", "image" => "/View/pics/frieren.jpg"],
-                        ["title" => "Fantaisie", "image" => "/View/pics/konosuba.jpg"],
-                        ["title" => "Action", "image" => "/View/pics/jujutsu_kaisen.jpg"],
-                        ["title" => "Drama", "image" => "/View/pics/kakegurui.jpg"],
-                        ["title" => "One piece !!", "image" => "/View/pics/one_piece.jpg"],
-                        // AJOUTER LES AUTRES ICI 
-                    ];
+                <?php
+                require 'model/connexion_bdd.php';
+
+                try {
+                    // Préparer et exécuter la requête SQL pour récupérer les catégories
+                    $query = $bdd->prepare('SELECT categorie_name, categorie_picture FROM categorie');
+                    $query->execute();
                     
-                    foreach ($catrgorie as $catrgorie) {
-                        echo '<a href="index.php" class="categorie_card_details">
-                                <img src="' . $catrgorie['image'] . '" alt="Affiche de ' . $catrgorie['title'] . '">
-                                <h4>' . $catrgorie['title'] . '</h4>
-                            </a>';
-                    }
+                    // Récupérer tous les résultats
+                    $categories = $query->fetchAll(PDO::FETCH_ASSOC);
+                } catch (Exception $e) {
+                    echo 'Erreur : ' . $e->getMessage();
+                }
+
+                foreach ($categories as $categorie) {
+                    echo '<a href="index.php" class="categorie_card_details">
+                            <img src="' . htmlspecialchars($categorie['categorie_picture']) . '" alt="Affiche de ' . htmlspecialchars($categorie['categorie_name']) . '">
+                            <h4>' . htmlspecialchars($categorie['categorie_name']) . '</h4>
+                        </a>';
+                }
                 ?>
 
 
