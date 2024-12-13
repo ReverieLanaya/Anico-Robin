@@ -15,7 +15,7 @@
 
                 try {
                     // Préparer et exécuter la requête SQL pour récupérer les catégories
-                    $query = $bdd->prepare('SELECT categorie_name, categorie_picture FROM categorie');
+                    $query = $bdd->prepare('SELECT categorie_name, categorie_picture FROM categorie ORDER BY categorie_name');
                     $query->execute();
                     
                     // Récupérer tous les résultats

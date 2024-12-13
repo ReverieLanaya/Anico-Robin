@@ -487,6 +487,11 @@ a {
 
 /* PARTIE ADMIN */
 
+/* A FINALISER */
+.msg_page_admin {
+    margin-left: 30%;
+}
+
 .contenu_admin {
     justify-self: center;
     width: 60%;

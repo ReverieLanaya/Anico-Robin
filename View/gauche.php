@@ -10,7 +10,6 @@
                     ["href" => "nouveaute.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Nouveauté"],
                     ["href" => "categorie.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Catégories"],
                     ["href" => "index.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Voir mon profil"],
-                    ["href" => "admin.php", "img_src" => "/View/pics/icones/home_icon.png", "alt" => "icone accueil", "text" => "Page Admin"],
                 ];
 
                 foreach ($liens as $lien) {
@@ -22,6 +21,20 @@
                         <span>' . htmlspecialchars($lien['text']) . '</span>
                     </a>';
                 }
+
+                // VERIFICATION SI ADMIN
+                require './model/verification_admin.php';
+                if ($isAdmin) {
+                    echo '
+                    <a href="admin.php" class="liens_gauche">
+                        <div class="icone_gauche">
+                            <img src="/View/pics/icones/home_icon.png" alt="icone accueil">
+                        </div>
+                        <span>Page Admin</span>
+                    </a>';
+                } else {
+                    // Rien à afficher pour les utilisateurs non connectés ou non administrateurs
+                }                
                 ?>    
             </div>
     

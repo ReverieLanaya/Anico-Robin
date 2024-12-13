@@ -1,8 +1,10 @@
 <!-- ///////PARTIE PHP ///////////// -->
- 
 
+<?php
+// VERIFICATION SI ADMIN
+require './model/verification_admin.php';
+if ($isAdmin): ?>
 
-<!-- ///////PARTIE HTML ///////////// -->
 <div class="contenu_admin">
 
     <div class="admin_categorie">
@@ -63,13 +65,13 @@
                     </div>
 
                     
-                         
+                        
                     <div class="input_form">
                         <label for="image_anime">Image:</label>
                         <input type="file" id="image_anime" name="image_anime" required>
                     </div>
 
-                   
+                
                     <div class="input_form ">
                         <label for="resume_anime">Petit résumé:</label>
                         <input type="text" id="resume_anime" name="resume_anime" class="input_resume" required>  
@@ -160,3 +162,10 @@
     </div>
 
 </div>
+
+
+<?php else :?>
+<h3 class="msg_page_admin">Vous ne pouvez pas accéder à cette page</h3>
+
+<?php endif; ?>
+?>
